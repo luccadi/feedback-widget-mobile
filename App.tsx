@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler'
 import { StatusBar } from 'expo-status-bar'
-import { View } from 'react-native'
+import { View, ImageBackground } from 'react-native'
 
 import {
   useFonts,
@@ -11,6 +11,8 @@ import * as SplashScreen from 'expo-splash-screen'
 
 import { theme } from './src/theme'
 import Widget from './src/components/Widget'
+
+import backImage from './src/assets/nlw-return.png'
 
 export default function App() {
   SplashScreen.preventAutoHideAsync()
@@ -32,9 +34,14 @@ export default function App() {
         backgroundColor: theme.colors.background
       }}
     >
-      <StatusBar style="light" backgroundColor="transparent" translucent />
-
-      <Widget />
+      <ImageBackground
+        source={backImage}
+        resizeMode="cover"
+        style={{ flex: 1, justifyContent: 'center' }}
+      >
+        <StatusBar style="light" backgroundColor="transparent" translucent />
+        <Widget />
+      </ImageBackground>
     </View>
   )
 }

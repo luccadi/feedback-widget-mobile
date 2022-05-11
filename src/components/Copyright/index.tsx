@@ -6,7 +6,7 @@ import { styles } from './styles'
 export function Copyright() {
   return (
     <View>
-      <Text style={styles.text}>Developed with ♥ by Lucca Di</Text>
+      <Text style={styles.text}>Developed with ❤️ by Lucca Di</Text>
     </View>
   )
 }
