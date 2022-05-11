@@ -34,13 +34,12 @@ export default function App() {
         backgroundColor: theme.colors.background
       }}
     >
-      <StatusBar style="light" backgroundColor="transparent" translucent />
-
       <ImageBackground
         source={backImage}
         resizeMode="cover"
         style={{ flex: 1, justifyContent: 'center' }}
       >
+        <StatusBar style="light" backgroundColor="transparent" translucent />
         <Widget />
       </ImageBackground>
     </View>
