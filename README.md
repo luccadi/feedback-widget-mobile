@@ -40,14 +40,11 @@ Web version: [Feedback Widget (Web)](https://github.com/LuccaDi/feedback-widget-
 
 ## 🚀 Technologies
 
-- [ReactJS](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/)
-- [Headless UI](https://headlessui.dev/)
-- [Phosphor Icons](https://phosphoricons.com)
-- [html2canvas](https://html2canvas.hertzen.com)
+- [React Native](https://reactnative.dev)
+- [Typescript](https://www.typescriptlang.org/)
+- [Expo](https://expo.dev)
 - [Axios](https://axios-http.com/ptbr/)
-
+- [Phosphor Icons](https://phosphoricons.com)
 
 ## 🛠 Features 
 
@@ -59,10 +56,11 @@ Web version: [Feedback Widget (Web)](https://github.com/LuccaDi/feedback-widget-
 
 ✔️ Possibility of sending a new feedback at the end
 
+<!---
 🛠️ Dark and light theme
 
 🚧 Dashboard to track the feedbacks received
-
+-->
 
 ## 🏁 Getting started
 
@@ -70,18 +68,19 @@ Web version: [Feedback Widget (Web)](https://github.com/LuccaDi/feedback-widget-
 
 - [Node.js](https://nodejs.org/en/)
 - [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/package/npm)
+- [Expo CLI](https://docs.expo.dev/workflow/expo-cli)
 
 
 **Clone the project and access the folder**
 
 ```bash
-git clone https://github.com/LuccaDi/feedback-widget-web.git && cd feedback-widget-web
+git clone https://github.com/LuccaDi/feedback-widget-mobile.git && cd feedback-widget-mobile
 ```
 
 
 **Follow the steps below**
 
-### Web
+### Mobile
 
 **Make sure you have the server running** (or you will only be able to see the front-end, the application will not work)
 
@@ -91,10 +90,17 @@ To clone the server and run it, go to [Feedback Widget (API)](https://github.com
 ```bash
 # Install the dependencies
 $ npm install
-# Make a copy of '.env.local.example' to '.env.local'
-$ cp .env.local.example .env.local
-# Start the application
-$ npm run dev
+
+# If you are going to emulate with android, run this command
+$ npm run android
+
+# If you are going to emulate with ios, run this command
+$ npm run ios
+
+# Or just start the bundle
+$ npm run start
+#or
+$ expo start
 ```
 
 ## 📝 License
